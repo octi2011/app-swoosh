@@ -88,10 +88,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="bgImg" destination="L6D-cF-6fD" id="tkn-T9-Bvi"/>
-                        <outlet property="swoosh" destination="bch-og-tqJ" id="Y0p-Zw-qyT"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -174,6 +170,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="p8z-7E-zdj" eventType="touchUpInside" id="PIX-sR-3m3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEx-MD-B4w">
                                 <rect key="frame" x="16" y="33" width="44" height="33"/>
@@ -207,6 +206,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="A8t-5m-Yoz"/>
                     </view>
+                    <connections>
+                        <segue destination="Wvb-TU-dwv" kind="show" identifier="skillVCSegue" id="GTV-ti-n6r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOV-Tv-Z1q" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="XLF-bR-Cf0" userLabel="Exit" sceneMemberID="exit"/>
