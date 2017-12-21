@@ -19,5 +19,11 @@ class WelcomeVC: UIViewController {
     @IBAction func unwindFromSkillVC(unwindSegue: UIStoryboardSegue) {
         
     }
+    
+    
+    // PRO TIPS
+    //D.R.Y principle
+    //Whenever you need to work with data put it in a Struct or Class, never pass around multiple variables between view controllers
+    
 }
 
